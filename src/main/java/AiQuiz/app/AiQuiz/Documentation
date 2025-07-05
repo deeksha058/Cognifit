@@ -1,0 +1,23 @@
+API:
+POST http://localhost:8080/getApiResponse
+
+REQUEST BODY:
+{
+  "levelOfQuiz": "Intermediate-level",
+  "topicName": "Java programming"
+}
+
+RESPONSE:
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, here's a 5-question multiple-choice quiz on Java, geared towards intermediate-level developers. Each question has four options, and the correct answer is indicated with an asterisk (*).\n\n**Java Programming Quiz (Intermediate Level)**\n\n1. Which of the following statements best describes the purpose of the `try-with-resources` statement in Java?\n\na) To handle exceptions thrown within a block of code.\nb) To automatically close resources that implement the `AutoCloseable` interface *after* the block of code has completed, regardless of whether an exception was thrown. (*)\nc) To simplify the creation of new threads.\nd) To provide a mechanism for automatic garbage collection of objects.\n\n... (and so on for remaining questions)"
+          }
+        ]
+      }
+    }
+  ]
+}
